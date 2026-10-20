@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Ragani & Pranay | Wedding Celebration Invitation</title>
+  <meta name="description" content="Wedding celebration invitation of Ragani Yadav & Pranay Yadav. Pratapgarh (23-26 Nov 2026) and Hyderabad (02 Dec 2026)." />
+  
+  <!-- Open Graph / WhatsApp / Facebook Link Previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ragani & Pranay | Wedding Invitation" />
+  <meta property="og:description" content="Together with their families, cordially invite you to celebrate their wedding ceremonies. Tap to open the invitation." />
+  <meta property="og:image" content="assets/hero-card-cover.webp" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ragani & Pranay | Wedding Invitation" />
+  <meta name="twitter:description" content="Together with their families, cordially invite you to celebrate their wedding ceremonies." />
+  <meta name="twitter:image" content="assets/hero-card-cover.webp" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪷</text></svg>" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Dancing+Script:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            royal: {
+              red: '#700B13',
+              maroon: '#4A080E',
+              crimson: '#8B0000',
+              deep: '#2A0407',
+            },
+            gold: {
+              light: '#FDE68A',
+              DEFAULT: '#D4AF37',
+              rich: '#B45309',
+              antique: '#C5A059',
+              dark: '#92400E',
+            },
+            silk: {
+              ivory: '#FDFBF7',
+              cream: '#FAF4EB',
+              sand: '#F3E8D8',
+            },
+            emerald: {
+              deep: '#143525',
+              soft: '#2D6A4F',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            royal: ['"Cinzel"', 'serif'],
+            script: ['"Dancing Script"', 'cursive'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF4EB;
+      color: #2D1810;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .gold-text-sheen {
+      background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Falling Petals Animation */
+    @keyframes fall {
+      0% {
+        transform: translate3d(0, -50px, 0) rotate(0deg);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.8;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        transform: translate3d(60px, 105vh, 0) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes sway {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(25px); }
+    }
+
+    .petal {
+      position: fixed;
+      pointer-events: none;
+      z-index: 40;
+      animation: fall linear infinite;
+    }
+
+    .petal-inner {
+      animation: sway ease-in-out infinite alternate;
+    }
+
+    /* Tab switcher */
+    .tab-active {
+      background: linear-gradient(135deg, #700B13 0%, #8E1520 100%);
+      color: #FDFBF7;
+      box-shadow: 0 4px 14px rgba(112, 11, 19, 0.35);
+    }
+    .tab-inactive {
+      background: #FFFFFF;
+      color: #700B13;
+      border: 1px solid #E6D5C3;
+    }
+    .tab-inactive:hover {
+      background: #FDF6ED;
+    }
+
+    /* Pulse animation for door seal */
+    @keyframes pulse-gentle {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+    }
+    .animate-pulse-gentle {
+      animation: pulse-gentle 2.2s infinite ease-in-out;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF4EB;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C5A059;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="font-sans text-[#331C13] selection:bg-gold-light selection:text-royal-red">
+
+  <!-- ======================================================== -->
+  <!-- ROYAL ENVELOPE / DOOR OPENING ANIMATION OVERLAY -->
+  <!-- ======================================================== -->
+  <div id="envelopeOverlay" class="fixed inset-0 z-[100] bg-black flex flex-col items-center justify-center overflow-hidden select-none transition-opacity duration-700">
+    
+    <!-- 3D Opening Video Element -->
+    <video id="envelopeVideo" playsinline webkit-playsinline muted preload="auto" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-700 pointer-events-none">
+      <source src="assets/hero-video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Still Card Cover (Before Tap) -->
+    <div id="envelopeCover" onclick="triggerDoorOpen()" class="absolute inset-0 w-full h-full z-20 cursor-pointer flex flex-col items-center justify-center transition-all duration-700 group">
+      <!-- Background Cover Artwork -->
+      <img src="assets/hero-card-cover.webp" alt="Wedding Invitation Card" class="absolute inset-0 w-full h-full object-cover object-center filter brightness-[0.85] transition-transform duration-1000 group-hover:scale-105">
+      
+      <!-- Vignette Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/75"></div>
+
+      <!-- Center Ornate Golden Wax Seal Prompt -->
+      <div class="relative z-30 flex flex-col items-center px-6 text-center max-w-sm animate-pulse-gentle">
+        
+        <!-- Sacred Inscription in English -->
+        <span class="text-xs uppercase tracking-[0.3em] text-gold-light font-bold mb-3 drop-shadow-md">
+          || Shree Ganeshaya Namah ||
+        </span>
+
+        <!-- Wax Seal Embellishment -->
+        <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-[#FFE082] via-[#D4AF37] to-[#B45309] p-1 shadow-[0_0_45px_rgba(212,175,55,0.75)] group-hover:scale-110 transition-transform duration-500 mb-4 flex items-center justify-center">
+          <div class="w-full h-full rounded-full border-2 border-white/40 flex flex-col items-center justify-center bg-[#520F16]">
+            <span class="text-2xl sm:text-3xl">🪷</span>
+            <span class="font-royal text-gold text-xs font-black tracking-widest mt-1">R ✦ P</span>
+          </div>
+        </div>
+
+        <!-- Tap to Open Button Pill -->
+        <div class="px-6 py-3 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-royal-deep font-bold text-xs sm:text-sm tracking-widest uppercase shadow-[0_4px_30px_rgba(212,175,55,0.6)] border border-white/50 group-hover:shadow-[0_4px_40px_rgba(212,175,55,0.9)] transition-all">
+          <span>TAP TO OPEN INVITATION</span>
+        </div>
+
+        <p class="text-xs text-silk-cream/90 mt-3 font-medium tracking-wider flex items-center gap-1.5">
+          <span>👆</span> <span>Click anywhere to open</span>
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Audio Player: "Aaj Se Teri" by Arijit Singh -->
+  <audio id="weddingAudio" loop preload="auto">
+    <source src="assets/aaj-se-teri.mp3" type="audio/mpeg">
+    <source src="assets/aaj-se-teri.m4a" type="audio/mp4">
+  </audio>
+
+  <!-- Petals Background Container -->
+  <div id="petalContainer" class="fixed inset-0 pointer-events-none z-30 overflow-hidden"></div>
+
+  <!-- FLOATING TOP BAR -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-[#FAF4EB]/90 backdrop-blur-md border-b border-[#EADCC9]/80 transition-all duration-300">
+    <div class="max-w-5xl mx-auto px-4 py-2.5 flex items-center justify-center sm:justify-start">
+      
+      <!-- Brand: Ragani & Pranay -->
+      <a href="#hero" class="flex items-center gap-2 group">
+        <span class="text-xl">🪷</span>
+        <span class="font-royal text-sm sm:text-base tracking-[0.2em] text-royal-red uppercase font-bold">Ragani &amp; Pranay</span>
+      </a>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION: Video Overlay + Grand Invitation Reveal -->
+  <section id="hero" class="relative min-h-[92vh] sm:min-h-screen pt-16 flex items-center justify-center bg-black overflow-hidden select-none">
+    
+    <!-- Background Video / Poster -->
+    <video id="heroVideo" autoplay loop muted playsinline poster="assets/hero-card-cover.webp" class="absolute inset-0 w-full h-full object-cover object-center opacity-70 filter brightness-[0.78]">
+      <source src="assets/hero-video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Dark Gradient Overlays for Readability -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-black/60 pointer-events-none"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.6)_100%)] pointer-events-none"></div>
+
+    <!-- Hero Content -->
+    <div class="relative z-20 max-w-3xl mx-auto px-4 py-12 text-center flex flex-col items-center">
+      
+      <!-- Sacred Inscription -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/40 border border-gold/40 backdrop-blur-sm mb-6">
+        <span class="text-gold text-sm">✦</span>
+        <span class="text-xs uppercase tracking-[0.25em] text-gold-light font-medium">Shree Ganeshaya Namah</span>
+        <span class="text-gold text-sm">✦</span>
+      </div>
+
+      <!-- Main Invocation Heading -->
+      <p class="font-serif italic text-base sm:text-xl text-silk-cream/90 mb-3">
+        Cordially invite you to celebrate the wedding celebrations of
+      </p>
+
+      <!-- Couple Names with Royal Styling -->
+      <div class="my-4 flex flex-col items-center">
+        
+        <!-- Bride -->
+        <h1 class="font-serif text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.9)] leading-none">
+          Ragani Yadav
+        </h1>
+        
+        <!-- Royal Connector Line -->
+        <div class="my-3 sm:my-4 flex items-center justify-center gap-4 w-full max-w-xs">
+          <div class="h-px flex-1 bg-gradient-to-r from-transparent via-gold to-gold"></div>
+          <span class="font-serif italic text-2xl sm:text-3xl text-gold-light drop-shadow-md">weds</span>
+          <div class="h-px flex-1 bg-gradient-to-l from-transparent via-gold to-gold"></div>
+        </div>
+
+        <!-- Groom -->
+        <h1 class="font-serif text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.9)] leading-none">
+          Pranay Yadav
+        </h1>
+
+      </div>
+
+      <!-- Dual-City Subtitle Badge -->
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm font-medium">
+        <span class="px-3.5 py-1.5 rounded-full bg-royal-red/80 text-silk-ivory border border-gold/40 backdrop-blur-sm flex items-center gap-1.5">
+          <span>📍</span>
+          <span>Pratapgarh (U.P.) · 23-26 Nov</span>
+        </span>
+        <span class="text-gold font-bold">✦</span>
+        <span class="px-3.5 py-1.5 rounded-full bg-emerald-deep/80 text-silk-ivory border border-gold/40 backdrop-blur-sm flex items-center gap-1.5">
+          <span>📍</span>
+          <span>Hyderabad (TS) · 02 Dec</span>
+        </span>
+      </div>
+
+      <!-- Scroll to Hub CTA Button -->
+      <div class="mt-8 flex flex-col sm:flex-row items-center gap-3">
+        <a href="#hubSection" class="px-7 py-3 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-royal-deep font-bold text-sm tracking-wider uppercase shadow-[0_4px_20px_rgba(212,175,55,0.4)] hover:scale-105 active:scale-95 transition-all">
+          <span>Explore Celebration Schedule</span>
+          <span class="ml-1.5">↓</span>
+        </a>
+        <a href="#wishesSection" class="px-5 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-medium text-xs tracking-wider uppercase backdrop-blur-sm border border-white/30 transition-all">
+          <span>Send Blessings via WhatsApp</span>
+          <span class="ml-1">💌</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Scroll Down Hint -->
+    <div class="absolute bottom-4 inset-x-0 flex justify-center pointer-events-none animate-bounce">
+      <span class="text-gold/80 text-lg">⌄</span>
+    </div>
+  </section>
+
+
+  <!-- DUAL-DESTINATION SELECTOR -->
+  <section id="hubSection" class="relative z-30 -mt-6 sm:-mt-8 max-w-4xl mx-auto px-4">
+    <div class="bg-white rounded-3xl p-3 sm:p-4 shadow-[0_12px_40px_rgba(45,24,16,0.12)] border border-[#E8DACB]">
+      
+      <!-- Sub-header -->
+      <div class="text-center mb-3">
+        <span class="text-[11px] uppercase tracking-[0.22em] text-gold-rich font-bold">
+          Select Destination Hub
+        </span>
+      </div>
+
+      <!-- 3-Way City Selector Tabs -->
+      <div class="grid grid-cols-3 gap-1.5 sm:gap-2 p-1.5 bg-[#FAF4EB] rounded-2xl border border-[#E8DACB]">
+        
+        <!-- Tab 1: All Events -->
+        <button onclick="setCityFilter('all')" id="tabAll" class="tab-btn tab-active py-2.5 sm:py-3 px-2 sm:px-4 rounded-xl text-xs sm:text-sm font-semibold transition-all flex flex-col items-center justify-center gap-0.5">
+          <span class="text-sm sm:text-base">✨</span>
+          <span class="leading-tight text-center">All Events</span>
+          <span class="text-[10px] opacity-75 hidden sm:inline">7 Ceremonies</span>
+        </button>
+
+        <!-- Tab 2: Pratapgarh Leg -->
+        <button onclick="setCityFilter('pratapgarh')" id="tabPratapgarh" class="tab-btn tab-inactive py-2.5 sm:py-3 px-2 sm:px-4 rounded-xl text-xs sm:text-sm font-semibold transition-all flex flex-col items-center justify-center gap-0.5">
+          <span class="text-sm sm:text-base">📍</span>
+          <span class="leading-tight text-center">Pratapgarh Leg</span>
+          <span class="text-[10px] opacity-75 hidden sm:inline">23 - 26 Nov 2026</span>
+        </button>
+
+        <!-- Tab 3: Hyderabad Leg -->
+        <button onclick="setCityFilter('hyderabad')" id="tabHyderabad" class="tab-btn tab-inactive py-2.5 sm:py-3 px-2 sm:px-4 rounded-xl text-xs sm:text-sm font-semibold transition-all flex flex-col items-center justify-center gap-0.5">
+          <span class="text-sm sm:text-base">👑</span>
+          <span class="leading-tight text-center">Hyderabad Leg</span>
+          <span class="text-[10px] opacity-75 hidden sm:inline">02 Dec 2026</span>
+        </button>
+
+      </div>
+
+      <!-- Quick Context Bar below Tabs -->
+      <div id="filterBanner" class="mt-3 px-3 py-2 rounded-xl bg-[#FDFBF7] border border-[#EADCC9] flex items-center justify-between text-xs text-[#70422E]">
+        <div class="flex items-center gap-2">
+          <span id="filterIcon" class="text-base">🗺️</span>
+          <span id="filterText" class="font-medium">
+            Showing all 7 auspicious wedding ceremonies across Pratapgarh and Hyderabad.
+          </span>
+        </div>
+        <span id="filterCount" class="font-bold text-royal-red shrink-0 ml-2">7 Events</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- DUAL COUNTDOWN TIMER -->
+  <section class="max-w-4xl mx-auto px-4 py-10">
+    <div class="bg-gradient-to-br from-[#FFFBF5] via-[#FAF4EB] to-[#F5ECE0] rounded-3xl p-6 sm:p-8 border border-gold/30 shadow-sm text-center relative overflow-hidden">
+      
+      <div class="text-2xl mb-1 text-gold">🪷</div>
+
+      <h2 id="countdownTitle" class="font-serif text-2xl sm:text-3xl text-royal-red font-bold">
+        Counting Down to the Sacred Vivah
+      </h2>
+
+      <p id="countdownSub" class="text-xs uppercase tracking-[0.2em] text-[#8C5E4A] font-medium mt-1 mb-6">
+        25 November 2026 · Pratapgarh, Uttar Pradesh
+      </p>
+
+      <!-- 4 Counters -->
+      <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-md mx-auto">
+        
+        <!-- Days -->
+        <div class="flex flex-col items-center">
+          <div class="w-full aspect-square max-w-[80px] rounded-2xl bg-white shadow-sm border border-gold/30 flex items-center justify-center">
+            <span id="countDays" class="font-serif text-2xl sm:text-4xl font-bold text-royal-red">00</span>
+          </div>
+          <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#7C4A32] mt-2">Days</span>
+        </div>
+
+        <!-- Hours -->
+        <div class="flex flex-col items-center">
+          <div class="w-full aspect-square max-w-[80px] rounded-2xl bg-white shadow-sm border border-gold/30 flex items-center justify-center">
+            <span id="countHours" class="font-serif text-2xl sm:text-4xl font-bold text-royal-red">00</span>
+          </div>
+          <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#7C4A32] mt-2">Hours</span>
+        </div>
+
+        <!-- Minutes -->
+        <div class="flex flex-col items-center">
+          <div class="w-full aspect-square max-w-[80px] rounded-2xl bg-white shadow-sm border border-gold/30 flex items-center justify-center">
+            <span id="countMins" class="font-serif text-2xl sm:text-4xl font-bold text-royal-red">00</span>
+          </div>
+          <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#7C4A32] mt-2">Minutes</span>
+        </div>
+
+        <!-- Seconds -->
+        <div class="flex flex-col items-center">
+          <div class="w-full aspect-square max-w-[80px] rounded-2xl bg-white shadow-sm border border-gold/30 flex items-center justify-center">
+            <span id="countSecs" class="font-serif text-2xl sm:text-4xl font-bold text-royal-red">00</span>
+          </div>
+          <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#7C4A32] mt-2">Seconds</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FAMILY INTRODUCTION & PEDIGREE -->
+  <section class="max-w-4xl mx-auto px-4 py-8">
+    <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-[#EADBCC] text-center">
+      
+      <!-- Header -->
+      <span class="text-xs uppercase tracking-[0.25em] text-gold-rich font-bold block mb-2">
+        With Sincere Blessings
+      </span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-royal-red font-bold mb-3">
+        Two Families United in Joy
+      </h2>
+      <div class="w-16 h-0.5 bg-gold mx-auto mb-8"></div>
+
+      <!-- Dual Side Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 text-left">
+        
+        <!-- Bride's Family Card (Pratapgarh) -->
+        <div class="p-6 rounded-2xl bg-[#FCFAF6] border border-[#EFE2D3] relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-gold-rich text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
+            Bride's Family · Pratapgarh
+          </div>
+          
+          <h3 class="font-serif text-2xl font-bold text-royal-red mb-1">
+            Ragani Yadav
+          </h3>
+          <p class="text-sm font-semibold text-[#8A4B2B] mb-3">
+            Daughter of Smt. Manju Devi & Shri Ram Tirth Yadav
+          </p>
+
+          <div class="space-y-1.5 text-xs text-[#6B4431] pt-3 border-t border-[#EFE2D3]">
+            <p><strong class="text-[#4A2616]">Granddaughter of:</strong> <span>Shri Udayraj Yadav</span></p>
+            <p><strong class="text-[#4A2616]">Native Residence:</strong> <span>Gram - Ramganj, Post - P.D. Chauraha, Tehsil - Patti, Pratapgarh, Uttar Pradesh</span></p>
+          </div>
+        </div>
+
+        <!-- Groom's Family Card (Hyderabad) -->
+        <div class="p-6 rounded-2xl bg-[#FCFAF6] border border-[#EFE2D3] relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-emerald-deep text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
+            Groom's Family · Hyderabad
+          </div>
+
+          <h3 class="font-serif text-2xl font-bold text-royal-red mb-1">
+            Pranay Yadav
+          </h3>
+          <p class="text-sm font-semibold text-[#8A4B2B] mb-3">
+            Son of Smt. Padmavati & Shri Naresh Chandra Yadav
+          </p>
+
+          <div class="space-y-1.5 text-xs text-[#6B4431] pt-3 border-t border-[#EFE2D3]">
+            <p><strong class="text-[#4A2616]">Residence:</strong> <span>Karmanghat, Hyderabad, Telangana</span></p>
+            <p><strong class="text-[#4A2616]">Grand Celebration:</strong> <span>Champapet, Hyderabad</span></p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Cordial Message -->
+      <div class="mt-8 pt-6 border-t border-[#EADBCC]">
+        <p class="font-serif italic text-lg sm:text-xl text-royal-red">
+          “You are invited, with your entire family, to grace our auspicious days with your presence and blessings.”
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- WEDDING CEREMONIES ITINERARY -->
+  <section id="eventsSection" class="max-w-4xl mx-auto px-4 py-8">
+    
+    <div class="text-center mb-10">
+      <span class="text-xs uppercase tracking-[0.25em] text-gold-rich font-bold block mb-1">
+        Sacred Itinerary
+      </span>
+      <h2 class="font-serif text-3xl sm:text-5xl text-royal-red font-bold">
+        The Celebration Schedule
+      </h2>
+      <p class="text-xs sm:text-sm text-[#7D533E] mt-2 max-w-md mx-auto">
+        Browse all ceremonies below or filter by Pratapgarh & Hyderabad using the tabs above.
+      </p>
+    </div>
+
+    <!-- Cards Container -->
+    <div class="space-y-8" id="eventsList">
+
+      <!-- EVENT 1: TEL POOJAN (Pratapgarh) - WITH DEDICATED IMAGE -->
+      <article class="event-card event-pratapgarh bg-white rounded-3xl overflow-hidden border border-[#E8DACB] shadow-sm hover:shadow-md transition-all">
+        <div class="grid grid-cols-1 md:grid-cols-12 items-stretch">
+          
+          <!-- Event Header with Image Mask -->
+          <div class="md:col-span-5 relative min-h-[220px] md:min-h-full bg-gradient-to-br from-[#FEF3C7] to-[#F59E0B] overflow-hidden">
+            <img src="assets/event-tel-poojan.jpg" alt="Tel Poojan Ceremony" class="w-full h-full object-cover object-center filter brightness-[0.95]" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 text-white">
+              <span class="inline-block px-3 py-1 rounded-full bg-gold-dark text-white text-[11px] font-bold tracking-wider uppercase mb-1 w-max">
+                📍 Pratapgarh
+              </span>
+              <h3 class="font-serif text-3xl font-bold">
+                Tel Poojan
+              </h3>
+              <p class="font-serif italic text-xs text-gold-light mt-1">
+                “Auspicious morning prayers, sacred oil ritual, and divine blessings”
+              </p>
+            </div>
+          </div>
+
+          <!-- Event Details -->
+          <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center gap-2 text-royal-red font-bold text-lg sm:text-xl font-serif">
+                <span>🗓️</span>
+                <span>Monday, 23 November 2026 · 10:00 AM</span>
+              </div>
+              <div class="flex items-start gap-2 text-sm text-[#5C3A28]">
+                <span>📍</span>
+                <div>
+                  <strong class="text-[#3A1E14]">Satyanarayan Marriage Lawn</strong>
+                  <p class="text-xs text-[#7A5440]">Ramganj, Patti, Pratapgarh, Uttar Pradesh</p>
+                </div>
+              </div>
+
+              <!-- Dress Code Palette Swatch -->
+              <div class="pt-2 flex items-center gap-2">
+                <span class="text-xs font-semibold text-[#8C5E4A]">Dress Code:</span>
+                <div class="flex items-center gap-1.5">
+                  <span class="w-4 h-4 rounded-full bg-[#D97706] border border-white shadow-sm inline-block" title="Festive Saffron"></span>
+                  <span class="w-4 h-4 rounded-full bg-[#FFFBEB] border border-[#D97706]/40 shadow-sm inline-block" title="Cream"></span>
+                  <span class="text-xs font-medium text-[#7A5440]">Traditional Festive & Saffron</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Actions: Maps & Calendar -->
+            <div class="mt-6 pt-4 border-t border-[#F0E5D8] flex flex-wrap items-center gap-2.5">
+              <a href="https://maps.google.com/?q=Satyanarayan+Marriage+Lawn,+Ramganj,+Pratapgarh,+Uttar+Pradesh" target="_blank" class="px-4 py-2 rounded-xl bg-[#FAF4EB] hover:bg-[#F3E5D4] text-royal-red text-xs font-semibold flex items-center gap-1.5 border border-[#E2CEBC]">
+                <span>📍</span>
+                <span>View Location on Maps</span>
+              </a>
+              <button onclick="addToCalendar('Tel Poojan - Ragani & Pranay', '2026-11-23T10:00:00', '2026-11-23T13:00:00', 'Satyanarayan Marriage Lawn, Ramganj, Pratapgarh')" class="px-4 py-2 rounded-xl bg-royal-red hover:bg-royal-maroon text-white text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+                <span>📅</span>
+                <span>Add to Calendar</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+
+      <!-- EVENT 2: HALDI CEREMONY (Pratapgarh) -->
+      <article class="event-card event-pratapgarh bg-white rounded-3xl overflow-hidden border border-[#E8DACB] shadow-sm hover:shadow-md transition-all">
+        <div class="grid grid-cols-1 md:grid-cols-12 items-stretch">
+          
+          <!-- Event Header with Image Mask -->
+          <div class="md:col-span-5 relative min-h-[220px] md:min-h-full bg-gradient-to-br from-[#FEF3C7] to-[#F59E0B] overflow-hidden">
+            <img src="assets/event-haldi.webp" alt="Haldi Ceremony" class="w-full h-full object-cover object-center filter brightness-[0.95]" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 text-white">
+              <span class="inline-block px-3 py-1 rounded-full bg-gold-dark text-white text-[11px] font-bold tracking-wider uppercase mb-1 w-max">
+                📍 Pratapgarh
+              </span>
+              <h3 class="font-serif text-3xl font-bold">
+                Haldi Ceremony
+              </h3>
+              <p class="font-serif italic text-xs text-gold-light mt-1">
+                “Sunlit, playful, and full of laughter”
+              </p>
+            </div>
+          </div>
+
+          <!-- Event Details -->
+          <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center gap-2 text-royal-red font-bold text-lg sm:text-xl font-serif">
+                <span>🗓️</span>
+                <span>Tuesday, 24 November 2026 · 01:00 PM</span>
+              </div>
+              <div class="flex items-start gap-2 text-sm text-[#5C3A28]">
+                <span>📍</span>
+                <div>
+                  <strong class="text-[#3A1E14]">Satyanarayan Marriage Lawn</strong>
+                  <p class="text-xs text-[#7A5440]">Ramganj, Patti, Pratapgarh, Uttar Pradesh</p>
+                </div>
+              </div>
+
+              <!-- Dress Code Palette Swatch -->
+              <div class="pt-2 flex items-center gap-2">
+                <span class="text-xs font-semibold text-[#8C5E4A]">Dress Code:</span>
+                <div class="flex items-center gap-1.5">
+                  <span class="w-4 h-4 rounded-full bg-[#F59E0B] border border-white shadow-sm inline-block" title="Festive Yellow"></span>
+                  <span class="w-4 h-4 rounded-full bg-[#FFFBEB] border border-[#D97706]/40 shadow-sm inline-block" title="Cream"></span>
+                  <span class="text-xs font-medium text-[#7A5440]">Festive Yellow & Cream</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="mt-6 pt-4 border-t border-[#F0E5D8] flex flex-wrap items-center gap-2.5">
+              <a href="https://maps.google.com/?q=Satyanarayan+Marriage+Lawn,+Ramganj,+Pratapgarh,+Uttar+Pradesh" target="_blank" class="px-4 py-2 rounded-xl bg-[#FAF4EB] hover:bg-[#F3E5D4] text-royal-red text-xs font-semibold flex items-center gap-1.5 border border-[#E2CEBC]">
+                <span>📍</span>
+                <span>View on Maps</span>
+              </a>
+              <button onclick="addToCalendar('Haldi Ceremony - Ragani & Pranay', '2026-11-24T13:00:00', '2026-11-24T16:00:00', 'Satyanarayan Marriage Lawn, Ramganj, Pratapgarh')" class="px-4 py-2 rounded-xl bg-royal-red hover:bg-royal-maroon text-white text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+                <span>📅</span>
+                <span>Add to Calendar</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+
+      <!-- EVENT 3 & 4: MEHENDI & SANGEET NIGHT (Pratapgarh) -->
+      <article class="event-card event-pratapgarh bg-white rounded-3xl overflow-hidden border border-[#E8DACB] shadow-sm hover:shadow-md transition-all">
+        <div class="grid grid-cols-1 md:grid-cols-12 items-stretch">
+          
+          <!-- Image Column -->
+          <div class="md:col-span-5 relative min-h-[220px] md:min-h-full bg-emerald-deep overflow-hidden">
+            <img src="assets/event-mehendi.webp" alt="Mehendi & Sangeet" class="w-full h-full object-cover object-center filter brightness-[0.95]" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-6 text-white">
+              <span class="inline-block px-3 py-1 rounded-full bg-emerald-soft text-white text-[11px] font-bold tracking-wider uppercase mb-1 w-max">
+                📍 Pratapgarh
+              </span>
+              <h3 class="font-serif text-3xl font-bold">
+                Mehendi & Sangeet DJ
+              </h3>
+              <p class="font-serif italic text-xs text-emerald-100 mt-1">
+                “Henna, dholak and dancing till late”
+              </p>
+            </div>
+          </div>
+
+          <!-- Details Column -->
+          <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
+            <div class="space-y-4">
+              
+              <!-- Mehendi Part -->
+              <div class="pb-3 border-b border-[#F0E5D8]">
+                <div class="flex items-center justify-between">
+                  <h4 class="font-serif text-xl font-bold text-emerald-deep">Mehendi Ceremony</h4>
+                  <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800">04:00 PM</span>
+                </div>
+                <p class="text-xs text-[#6B4431] mt-0.5">Tuesday, 24 November 2026</p>
+              </div>
+
+              <!-- Sangeet Part -->
+              <div>
+                <div class="flex items-center justify-between">
+                  <h4 class="font-serif text-xl font-bold text-royal-red">Sangeet & DJ Night</h4>
+                  <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800">07:00 PM</span>
+                </div>
+                <p class="text-xs text-[#6B4431] mt-0.5">Tuesday, 24 November 2026 · Music, Dance & Dinner</p>
+              </div>
+
+              <div class="flex items-start gap-2 text-sm text-[#5C3A28] pt-1">
+                <span>📍</span>
+                <span class="text-xs">Satyanarayan Marriage Lawn, Ramganj, Pratapgarh</span>
+              </div>
+
+              <!-- Dress Code Palette Swatch -->
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-semibold text-[#8C5E4A]">Dress Code:</span>
+                <div class="flex items-center gap-1.5">
+                  <span class="w-4 h-4 rounded-full bg-[#1B4332] border border-white shadow-sm inline-block" title="Deep Emerald"></span>
+                  <span class="w-4 h-4 rounded-full bg-[#D4AF37] border border-white shadow-sm inline-block" title="Gold"></span>
+                  <span class="text-xs font-medium text-[#7A5440]">Greens & Gold</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Actions -->
+            <div class="mt-6 pt-4 border-t border-[#F0E5D8] flex flex-wrap items-center gap-2.5">
+              <a href="https://maps.google.com/?q=Satyanarayan+Marriage+Lawn,+Ramganj,+Pratapgarh,+Uttar+Pradesh" target="_blank" class="px-4 py-2 rounded-xl bg-[#FAF4EB] hover:bg-[#F3E5D4] text-royal-red text-xs font-semibold flex items-center gap-1.5 border border-[#E2CEBC]">
+                <span>📍</span>
+                <span>View Location</span>
+              </a>
+              <button onclick="addToCalendar('Sangeet & DJ Night - Ragani & Pranay', '2026-11-24T19:00:00', '2026-11-24T23:30:00', 'Satyanarayan Marriage Lawn, Ramganj, Pratapgarh')" class="px-4 py-2 rounded-xl bg-royal-red hover:bg-royal-maroon text-white text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+                <span>📅</span>
+                <span>Add to Calendar</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+
+      <!-- EVENT 5: THE SACRED VIVAH (The Main Auspicious Wedding - Pratapgarh) -->
+      <article class="event-card event-pratapgarh bg-gradient-to-br from-[#700B13] via-[#5E0A11] to-[#3B050B] rounded-3xl overflow-hidden border-2 border-gold shadow-xl text-silk-ivory">
+        <div class="grid grid-cols-1 md:grid-cols-12 items-stretch">
+          
+          <!-- Image Mask -->
+          <div class="md:col-span-5 relative min-h-[260px] md:min-h-full overflow-hidden">
+            <img src="assets/event-vivah.webp" alt="Sacred Vivah" class="w-full h-full object-cover object-center filter brightness-[0.95]" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6">
+              <span class="inline-block px-3 py-1 rounded-full bg-gold text-royal-deep text-[11px] font-bold tracking-wider uppercase mb-1 w-max">
+                👑 The Main Event
+              </span>
+              <h3 class="font-serif text-3xl sm:text-4xl font-bold text-gold-light">
+                The Sacred Vivah
+              </h3>
+              <p class="font-serif italic text-xs text-silk-cream/90 mt-1">
+                “Seven sacred vows, one beautiful beginning”
+              </p>
+            </div>
+          </div>
+
+          <!-- Wedding Chronology Details -->
+          <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
+            <div class="space-y-4">
+              
+              <div class="pb-3 border-b border-gold/30">
+                <span class="text-xs uppercase tracking-[0.2em] text-gold font-semibold">Auspicious Wedding Day</span>
+                <h4 class="font-serif text-3xl font-bold text-gold-light">
+                  Wednesday, 25 November 2026
+                </h4>
+              </div>
+
+              <!-- Ritual Timeline -->
+              <div class="space-y-2 text-sm">
+                <div class="flex items-center justify-between py-1 border-b border-white/10">
+                  <span>Baraat Swagat (Procession Welcome)</span>
+                  <span class="font-bold text-gold-light">07:00 PM</span>
+                </div>
+                <div class="flex items-center justify-between py-1 border-b border-white/10">
+                  <span>Varmala Ceremony (Garlands Exchange)</span>
+                  <span class="font-bold text-gold-light">11:00 PM</span>
+                </div>
+                <div class="flex items-center justify-between py-1 border-b border-white/10">
+                  <span>Seven Sacred Pheras (Wedding Vows)</span>
+                  <span class="font-bold text-gold-light">03:00 AM (26 Nov)</span>
+                </div>
+                <div class="flex items-center justify-between py-1">
+                  <span>Festive Dinner & Blessings</span>
+                  <span class="font-bold text-gold-light">Evening Onwards</span>
+                </div>
+              </div>
+
+              <div class="pt-2 text-xs text-silk-cream/90 flex items-start gap-1.5">
+                <span>📍</span>
+                <span>Satyanarayan Marriage Lawn, Ramganj, Pratapgarh, Uttar Pradesh</span>
+              </div>
+
+              <!-- Dress Code Swatch -->
+              <div class="flex items-center gap-2 pt-1">
+                <span class="text-xs font-semibold text-gold">Dress Code:</span>
+                <div class="flex items-center gap-1.5">
+                  <span class="w-4 h-4 rounded-full bg-[#8B0000] border border-white shadow-sm inline-block" title="Royal Maroon"></span>
+                  <span class="w-4 h-4 rounded-full bg-[#D4AF37] border border-white shadow-sm inline-block" title="Gold"></span>
+                  <span class="text-xs font-medium text-silk-cream">Royal Red, Maroon & Gold</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Actions -->
+            <div class="mt-6 pt-4 border-t border-gold/30 flex flex-wrap items-center gap-2.5">
+              <a href="https://maps.google.com/?q=Satyanarayan+Marriage+Lawn,+Ramganj,+Pratapgarh,+Uttar+Pradesh" target="_blank" class="px-4 py-2 rounded-xl bg-gold hover:bg-gold-light text-royal-deep text-xs font-bold flex items-center gap-1.5 shadow-md">
+                <span>📍</span>
+                <span>Get Directions</span>
+              </a>
+              <button onclick="addToCalendar('Shubh Vivah - Ragani & Pranay', '2026-11-25T19:00:00', '2026-11-26T06:00:00', 'Satyanarayan Marriage Lawn, Ramganj, Pratapgarh')" class="px-4 py-2 rounded-xl bg-white/20 hover:bg-white/30 text-white text-xs font-semibold flex items-center gap-1.5 border border-white/40">
+                <span>📅</span>
+                <span>Add Wedding to Calendar</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+
+      <!-- EVENT 6: VIDAAI (Pratapgarh) -->
+      <article class="event-card event-pratapgarh bg-white rounded-3xl overflow-hidden border border-[#E8DACB] shadow-sm hover:shadow-md transition-all">
+        <div class="grid grid-cols-1 md:grid-cols-12 items-stretch">
+          
+          <div class="md:col-span-5 relative min-h-[220px] md:min-h-full bg-[#1B1528] overflow-hidden">
+            <img src="assets/event-vidaai.webp" alt="Vidaai Doli" class="w-full h-full object-cover object-center filter brightness-[0.95]" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-6 text-white">
+              <span class="inline-block px-3 py-1 rounded-full bg-[#4C1D95] text-white text-[11px] font-bold tracking-wider uppercase mb-1 w-max">
+                📍 Pratapgarh
+              </span>
+              <h3 class="font-serif text-3xl font-bold">
+                Vidaai (The Farewell)
+              </h3>
+              <p class="font-serif italic text-xs text-purple-200 mt-1">
+                “Heartfelt farewell and lifelong blessings”
+              </p>
+            </div>
+          </div>
+
+          <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center gap-2 text-royal-red font-bold text-lg sm:text-xl font-serif">
+                <span>🗓️</span>
+                <span>Thursday, 26 November 2026 · 08:00 AM</span>
+              </div>
+              <div class="flex items-start gap-2 text-sm text-[#5C3A28]">
+                <span>📍</span>
+                <div>
+                  <strong class="text-[#3A1E14]">Ramganj, Pratapgarh</strong>
+                  <p class="text-xs text-[#7A5440]">Satyanarayan Marriage Lawn</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-2 pt-1">
+                <span class="text-xs font-semibold text-[#8C5E4A]">Dress Code:</span>
+                <span class="text-xs font-medium text-[#7A5440]">Graceful Traditional Attire</span>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-[#F0E5D8] flex flex-wrap items-center gap-2.5">
+              <button onclick="addToCalendar('Vidaai Ceremony - Ragani & Pranay', '2026-11-26T08:00:00', '2026-11-26T10:00:00', 'Satyanarayan Marriage Lawn, Ramganj, Pratapgarh')" class="px-4 py-2 rounded-xl bg-royal-red hover:bg-royal-maroon text-white text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+                <span>📅</span>
+                <span>Add to Calendar</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+
+      <!-- EVENT 7: GRAND RECEPTION (Hyderabad Leg) -->
+      <article class="event-card event-hyderabad bg-gradient-to-br from-[#1A0924] via-[#360E36] to-[#0F0314] rounded-3xl overflow-hidden border-2 border-gold/70 shadow-xl text-silk-ivory">
+        <div class="grid grid-cols-1 md:grid-cols-12 items-stretch">
+          
+          <!-- Image Mask -->
+          <div class="md:col-span-5 relative min-h-[260px] md:min-h-full overflow-hidden">
+            <img src="assets/event-reception.webp" alt="Reception Banquet & Gala" class="w-full h-full object-cover object-center filter brightness-[0.95]" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6">
+              <span class="inline-block px-3 py-1 rounded-full bg-gold text-royal-deep text-[11px] font-bold tracking-wider uppercase mb-1 w-max">
+                👑 Hyderabad Leg
+              </span>
+              <h3 class="font-serif text-3xl sm:text-4xl font-bold text-gold-light">
+                Grand Reception
+              </h3>
+              <p class="font-serif italic text-xs text-amber-200 mt-1">
+                “An evening of celebration, dining, and joyous melodies”
+              </p>
+            </div>
+          </div>
+
+          <!-- Reception Details -->
+          <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
+            <div class="space-y-4">
+              
+              <div class="pb-3 border-b border-gold/30">
+                <span class="text-xs uppercase tracking-[0.2em] text-gold font-semibold">Hyderabad Celebration</span>
+                <h4 class="font-serif text-3xl font-bold text-gold-light">
+                  Wednesday, 02 December 2026
+                </h4>
+                <p class="text-xs text-amber-100 font-medium mt-1">
+                  Evening 07:00 PM onwards · Banquet, Music & Dinner
+                </p>
+              </div>
+
+              <!-- Venue Details -->
+              <div class="space-y-1.5 text-xs text-silk-cream/90">
+                <div class="flex items-start gap-2">
+                  <span class="text-base text-gold">📍</span>
+                  <div>
+                    <strong class="text-base text-gold-light font-serif block">Manda Yadava Reddy Gardens</strong>
+                    <span>Champapet, Hyderabad, Telangana</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dress Code Swatch -->
+              <div class="flex items-center gap-2 pt-1">
+                <span class="text-xs font-semibold text-gold">Dress Code:</span>
+                <div class="flex items-center gap-1.5">
+                  <span class="w-4 h-4 rounded-full bg-[#520F3E] border border-white shadow-sm inline-block" title="Royal Plum"></span>
+                  <span class="w-4 h-4 rounded-full bg-[#FCD34D] border border-white shadow-sm inline-block" title="Champagne Gold"></span>
+                  <span class="text-xs font-medium text-silk-cream">Festive Glam & Royal Splendour</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Actions -->
+            <div class="mt-6 pt-4 border-t border-gold/30 flex flex-wrap items-center gap-2.5">
+              <a href="https://maps.google.com/?q=Manda+Yadava+Reddy+Gardens,+Champapet,+Hyderabad,+Telangana" target="_blank" class="px-4 py-2 rounded-xl bg-gold hover:bg-gold-light text-royal-deep text-xs font-bold flex items-center gap-1.5 shadow-md">
+                <span>📍</span>
+                <span>Open Hyderabad Venue Map</span>
+              </a>
+              <button onclick="addToCalendar('Grand Reception - Ragani & Pranay', '2026-12-02T19:00:00', '2026-12-02T23:30:00', 'Manda Yadava Reddy Gardens, Champapet, Hyderabad')" class="px-4 py-2 rounded-xl bg-white/20 hover:bg-white/30 text-white text-xs font-semibold flex items-center gap-1.5 border border-white/40">
+                <span>📅</span>
+                <span>Add Reception to Calendar</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- VENUES & TRAVEL GUIDE -->
+  <section class="max-w-4xl mx-auto px-4 py-8">
+    <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-[#EADBCC]">
+      
+      <div class="text-center mb-8">
+        <span class="text-xs uppercase tracking-[0.25em] text-gold-rich font-bold block mb-1">
+          Location & Travel
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-royal-red font-bold">
+          Venues & Directions
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Pratapgarh Venue Card -->
+        <div class="p-6 rounded-2xl bg-[#FCFAF6] border border-[#EFE2D3] flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xl">🛕</span>
+              <span class="text-xs font-bold text-royal-red uppercase tracking-wider">Pratapgarh Venue</span>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-[#3A1E14] mb-1">
+              Satyanarayan Marriage Lawn
+            </h3>
+            <p class="text-xs text-[#7A5440] mb-4">
+              Ramganj, Tehsil - Patti, District - Pratapgarh, Uttar Pradesh
+            </p>
+            <p class="text-xs text-[#6B4431] bg-white p-3 rounded-xl border border-[#E8DACB]">
+              Hosts Tel Poojan, Haldi, Sangeet & DJ Night, The Sacred Vivah, and Vidaai ceremonies.
+            </p>
+          </div>
+
+          <div class="mt-6">
+            <a href="https://maps.google.com/?q=Satyanarayan+Marriage+Lawn,+Ramganj,+Pratapgarh,+Uttar+Pradesh" target="_blank" class="w-full py-2.5 rounded-xl bg-royal-red hover:bg-royal-maroon text-white text-xs font-semibold flex items-center justify-center gap-2 shadow-sm transition-all">
+              <span>📍</span>
+              <span>Navigate to Satyanarayan Lawn</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hyderabad Venue Card -->
+        <div class="p-6 rounded-2xl bg-[#FCFAF6] border border-[#EFE2D3] flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xl">🏛️</span>
+              <span class="text-xs font-bold text-emerald-deep uppercase tracking-wider">Hyderabad Venue</span>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-[#3A1E14] mb-1">
+              Manda Yadava Reddy Gardens
+            </h3>
+            <p class="text-xs text-[#7A5440] mb-4">
+              Champapet, Hyderabad, Telangana
+            </p>
+            <p class="text-xs text-[#6B4431] bg-white p-3 rounded-xl border border-[#E8DACB]">
+              Hosts the Grand Reception, Festive Banquet, Music & Blessings on 02 December 2026.
+            </p>
+          </div>
+
+          <div class="mt-6">
+            <a href="https://maps.google.com/?q=Manda+Yadava+Reddy+Gardens,+Champapet,+Hyderabad,+Telangana" target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-deep hover:bg-emerald-soft text-white text-xs font-semibold flex items-center justify-center gap-2 shadow-sm transition-all">
+              <span>📍</span>
+              <span>Navigate to Reddy Gardens</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- WHATSAPP BLESSINGS & GUEST WISHES -->
+  <section id="wishesSection" class="max-w-4xl mx-auto px-4 py-10">
+    <div class="bg-gradient-to-br from-[#FFFBF5] via-[#FAF4EB] to-[#F5ECE0] rounded-3xl p-6 sm:p-10 border border-gold/30 shadow-md text-center">
+      
+      <span class="text-2xl mb-1 inline-block">💌</span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-royal-red font-bold">
+        Shower Your Heartfelt Blessings
+      </h2>
+      <p class="text-xs sm:text-sm text-[#7D533E] mt-2 max-w-md mx-auto mb-6">
+        Tap any wish below or type your personal message to send directly to the family on WhatsApp!
+      </p>
+
+      <!-- Pre-written Wish Chips -->
+      <div class="flex flex-wrap items-center justify-center gap-2 max-w-2xl mx-auto mb-6">
+        <button onclick="setCustomWish('Wishing Ragani and Pranay a lifetime of love, prosperity and togetherness! Heartiest congratulations to both families! 💐✨')" class="px-3.5 py-2 rounded-xl bg-white hover:bg-gold-light/40 border border-gold/30 text-xs font-medium text-[#4A2616] transition-all text-left">
+          💐 "Wishing a lifetime of love & prosperity..."
+        </button>
+        <button onclick="setCustomWish('Heartiest congratulations to the Yadav family! Can not wait to celebrate with you in Pratapgarh & Hyderabad! 🎉🪷')" class="px-3.5 py-2 rounded-xl bg-white hover:bg-gold-light/40 border border-gold/30 text-xs font-medium text-[#4A2616] transition-all text-left">
+          🎉 "Can't wait to celebrate in Pratapgarh & Hyderabad..."
+        </button>
+        <button onclick="setCustomWish('Wishing Ragani and Pranay endless happiness, good health, and abundant blessings on their auspicious wedding! 🪔✨')" class="px-3.5 py-2 rounded-xl bg-white hover:bg-gold-light/40 border border-gold/30 text-xs font-medium text-[#4A2616] transition-all text-left">
+          🪔 "Warmest blessings to Ragani & Pranay for a blessed life..."
+        </button>
+      </div>
+
+      <!-- Message Textarea -->
+      <div class="max-w-md mx-auto space-y-3">
+        <textarea id="wishInput" rows="3" class="w-full p-3.5 rounded-2xl bg-white border border-[#E8DACB] text-xs sm:text-sm focus:outline-none focus:border-royal-red text-[#3A1E14]" placeholder="Type your personal message or blessing here..."></textarea>
+        
+        <button onclick="sendWhatsAppWish()" class="w-full py-3.5 rounded-2xl bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:opacity-95 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Send Blessings to the Family</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-[#2A150D] text-silk-ivory py-12 px-4 text-center border-t border-gold/30">
+    <div class="max-w-2xl mx-auto space-y-4">
+      
+      <div class="text-3xl text-gold">🪷</div>
+
+      <h3 class="font-serif text-3xl sm:text-4xl font-bold gold-text-sheen">
+        Ragani & Pranay
+      </h3>
+
+      <p class="text-xs uppercase tracking-[0.25em] text-gold-light/90">
+        Pratapgarh · Hyderabad · 2026
+      </p>
+
+      <p class="text-xs text-silk-cream/70 max-w-md mx-auto leading-relaxed pt-2">
+        We eagerly await your presence to celebrate and bless the auspicious beginnings of our new life together.
+      </p>
+
+      <div class="pt-6 border-t border-white/10 text-[11px] text-silk-cream/50">
+        <span>Crafted with love for our Sister's Wedding</span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // State
+    let currentFilter = 'all';
+    let isMusicPlaying = false;
+    let hasDoorOpened = false;
+
+    // TARGET DATES
+    const WEDDING_TIMESTAMP = new Date('2026-11-25T19:00:00+05:30').getTime();
+    const RECEPTION_TIMESTAMP = new Date('2026-12-02T19:00:00+05:30').getTime();
+
+    // 1. DUAL CITY FILTER
+    function setCityFilter(city) {
+      currentFilter = city;
+      
+      const tabAll = document.getElementById('tabAll');
+      const tabPratapgarh = document.getElementById('tabPratapgarh');
+      const tabHyderabad = document.getElementById('tabHyderabad');
+      const filterIcon = document.getElementById('filterIcon');
+      const filterText = document.getElementById('filterText');
+      const filterCount = document.getElementById('filterCount');
+      
+      [tabAll, tabPratapgarh, tabHyderabad].forEach(tab => {
+        tab.classList.remove('tab-active');
+        tab.classList.add('tab-inactive');
+      });
+
+      const cards = document.querySelectorAll('.event-card');
+      let visibleCount = 0;
+
+      if (city === 'all') {
+        tabAll.classList.remove('tab-inactive');
+        tabAll.classList.add('tab-active');
+        filterIcon.textContent = '🗺️';
+        filterText.textContent = 'Showing all 7 auspicious wedding ceremonies across Pratapgarh and Hyderabad.';
+        cards.forEach(card => {
+          card.style.display = 'block';
+          visibleCount++;
+        });
+      } else if (city === 'pratapgarh') {
+        tabPratapgarh.classList.remove('tab-inactive');
+        tabPratapgarh.classList.add('tab-active');
+        filterIcon.textContent = '📍';
+        filterText.textContent = 'Showing 6 ceremonies at Satyanarayan Marriage Lawn, Pratapgarh, U.P. (23 - 26 Nov).';
+        cards.forEach(card => {
+          if (card.classList.contains('event-pratapgarh')) {
+            card.style.display = 'block';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      } else if (city === 'hyderabad') {
+        tabHyderabad.classList.remove('tab-inactive');
+        tabHyderabad.classList.add('tab-active');
+        filterIcon.textContent = '👑';
+        filterText.textContent = 'Showing Grand Reception at Manda Yadava Reddy Gardens, Hyderabad (02 Dec).';
+        cards.forEach(card => {
+          if (card.classList.contains('event-hyderabad')) {
+            card.style.display = 'block';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      filterCount.textContent = `${visibleCount} Events`;
+      updateCountdownHeadings();
+    }
+
+    // 2. LIVE COUNTDOWN TIMER
+    function updateCountdown() {
+      const now = new Date().getTime();
+      let target = (currentFilter === 'hyderabad') ? RECEPTION_TIMESTAMP : WEDDING_TIMESTAMP;
+      let diff = target - now;
+
+      if (diff <= 0) {
+        document.getElementById('countDays').textContent = '00';
+        document.getElementById('countHours').textContent = '00';
+        document.getElementById('countMins').textContent = '00';
+        document.getElementById('countSecs').textContent = '00';
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('countDays').textContent = String(days).padStart(2, '0');
+      document.getElementById('countHours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('countMins').textContent = String(mins).padStart(2, '0');
+      document.getElementById('countSecs').textContent = String(secs).padStart(2, '0');
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // 3. COUNTDOWN HEADINGS
+    function updateCountdownHeadings() {
+      const cdTitle = document.getElementById('countdownTitle');
+      const cdSub = document.getElementById('countdownSub');
+      if (currentFilter === 'hyderabad') {
+        cdTitle.textContent = 'Counting Down to the Grand Reception';
+        cdSub.textContent = '02 December 2026 · Champapet, Hyderabad';
+      } else {
+        cdTitle.textContent = 'Counting Down to the Sacred Vivah';
+        cdSub.textContent = '25 November 2026 · Pratapgarh, Uttar Pradesh';
+      }
+    }
+
+    // 4. ADD TO CALENDAR (.ICS FILE + GOOGLE CALENDAR)
+    function addToCalendar(title, startISO, endISO, location) {
+      const formatTime = iso => iso.replace(/[-:]/g, '');
+      const googleUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${formatTime(startISO)}/${formatTime(endISO)}&location=${encodeURIComponent(location)}&details=${encodeURIComponent('Ragani & Pranay Wedding Celebration Invitation')}`;
+      window.open(googleUrl, '_blank');
+    }
+
+    // 5. WHATSAPP WISH SENDER
+    function setCustomWish(text) {
+      document.getElementById('wishInput').value = text;
+    }
+
+    function sendWhatsAppWish() {
+      const input = document.getElementById('wishInput');
+      let msg = input.value.trim();
+      if (!msg) {
+        msg = 'Heartiest congratulations to Ragani & Pranay and the entire Yadav family on this sacred wedding celebration! 🪷💐';
+      }
+      const encoded = encodeURIComponent(msg);
+      window.open(`https://wa.me/?text=${encoded}`, '_blank');
+    }
+
+    // 6. FLOATING ROSE & MARIGOLD PETAL SHOWER
+    function initPetals() {
+      const container = document.getElementById('petalContainer');
+      const petalTypes = [
+        { color: '#F59E0B', size: 18, delay: 0, duration: 12 },
+        { color: '#E11D48', size: 20, delay: 2, duration: 15 },
+        { color: '#FBBF24', size: 16, delay: 4, duration: 14 },
+        { color: '#BE123C', size: 22, delay: 6, duration: 16 },
+        { color: '#F59E0B', size: 15, delay: 8, duration: 13 },
+        { color: '#E11D48', size: 19, delay: 10, duration: 17 }
+      ];
+
+      petalTypes.forEach((p, idx) => {
+        const petal = document.createElement('div');
+        petal.className = 'petal';
+        petal.style.left = `${(idx * 16) + Math.random() * 8}%`;
+        petal.style.animationDuration = `${p.duration}s`;
+        petal.style.animationDelay = `${p.delay}s`;
+
+        const inner = document.createElement('div');
+        inner.className = 'petal-inner';
+        inner.style.animationDuration = '3.5s';
+
+        inner.innerHTML = `
+          <svg width="${p.size}" height="${p.size * 1.3}" viewBox="0 0 24 32" fill="${p.color}" opacity="0.75" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">
+            <path d="M12 0C16 7 24 14 24 22C24 27.5 18.6 32 12 32C5.4 32 0 27.5 0 22C0 14 8 7 12 0Z"/>
+          </svg>
+        `;
+
+        petal.appendChild(inner);
+        container.appendChild(petal);
+      });
+    }
+
+    // 7. AAJ SE TERI (ARIJIT SINGH) - ROBUST AUDIO PLAYBACK
+    function playWeddingMusic() {
+      const audio = document.getElementById('weddingAudio');
+      if (!audio) return;
+      audio.volume = 0.85;
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          isMusicPlaying = true;
+        }).catch(err => {
+          console.log('Audio autoplay prevented, will start on next interaction:', err);
+        });
+      }
+    }
+
+    // 8. DOOR OPENING ANIMATION: OPENS STRAIGHT TO MAIN PAGE WITHOUT GETTING STUCK
+    function triggerDoorOpen() {
+      if (hasDoorOpened) return;
+      hasDoorOpened = true;
+
+      const video = document.getElementById('envelopeVideo');
+      const cover = document.getElementById('envelopeCover');
+      const overlay = document.getElementById('envelopeOverlay');
+
+      // Instantly start playing "Aaj Se Teri" by Arijit Singh on user gesture
+      playWeddingMusic();
+
+      // Play 3D door opening video
+      if (video) {
+        video.muted = true;
+        video.currentTime = 0;
+        video.style.opacity = '1';
+        video.play().catch(e => console.log('Video play notice:', e));
+      }
+
+      // Fade out card cover immediately
+      if (cover) {
+        cover.style.opacity = '0';
+        cover.style.pointerEvents = 'none';
+      }
+
+      // Automatically dissolve overlay as doors open so guests enter the main page freely
+      setTimeout(() => {
+        if (overlay) {
+          overlay.style.transition = 'opacity 0.8s ease-out';
+          overlay.style.opacity = '0';
+          overlay.style.pointerEvents = 'none';
+          
+          setTimeout(() => {
+            overlay.style.display = 'none';
+            document.body.style.overflow = '';
+          }, 800);
+        }
+        document.body.style.overflow = '';
+      }, 2600);
+    }
+
+    // Global listener: ensure audio starts if clicked anywhere on the page
+    ['click', 'touchstart'].forEach(evtType => {
+      window.addEventListener(evtType, () => {
+        const audio = document.getElementById('weddingAudio');
+        if (audio && audio.paused && hasDoorOpened) {
+          audio.volume = 0.85;
+          audio.play().catch(() => {});
+        }
+      }, { passive: true });
+    });
+
+    // Initialize on load
+    document.addEventListener('DOMContentLoaded', () => {
+      document.body.style.overflow = 'hidden';
+      initPetals();
+      updateCountdownHeadings();
+    });
+  </script>
+
+</body>
+</html>
