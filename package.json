@@ -1,0 +1,11 @@
+{
+  "name": "ragani-pranay-wedding-hub",
+  "version": "1.0.0",
+  "description": "Ragani Yadav & Pranay Yadav Wedding Celebration Hub (Pratapgarh & Hyderabad)",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": ["wedding", "invitation", "pratapgarh", "hyderabad", "ragani", "pranay"],
+  "author": "Yadav Family",
+  "license": "ISC"
+}
